@@ -17,11 +17,11 @@ const PokemonApplication = () => {
   return (
     <div>
       <select name="" id="">
-        {pokemons.map((pokemon) => {
+        {pokemons.map((pokemon) => (
           <option key={pokemon.name} value={pokemon.url}>
             {pokemon.name}
           </option>
-        })}
+        ))}
       </select>
     </div>
   );
