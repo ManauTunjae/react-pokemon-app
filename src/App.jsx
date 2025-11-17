@@ -15,6 +15,6 @@ function App() {
       {show && <PokemonApplication />}
     </div>
   );
-}
+};
 
 export default App;

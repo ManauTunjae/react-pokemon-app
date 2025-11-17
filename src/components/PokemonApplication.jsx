@@ -12,8 +12,6 @@ const PokemonApplication = () => {
     getPokemons();
   }, []);
 
-  console.log(pokemons);
-
   return (
     <div>
       <select name="" id="">
@@ -26,4 +24,5 @@ const PokemonApplication = () => {
     </div>
   );
 };
+
 export default PokemonApplication;

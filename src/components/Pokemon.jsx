@@ -3,6 +3,7 @@ function Pokemon () {
         <div>
 
         </div>
-    )
-}
+    );
+};
+
 export default Pokemon
