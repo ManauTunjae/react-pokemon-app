@@ -1,27 +1,20 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import PokemonApplication from './components/PokemonApplication';
+import { useState } from "react";
+import "./App.css";
+import PokemonApplication from "./components/PokemonApplication";
 
 function App() {
-
-  const [pokemons, setPokemons] = useState([]);
-
-  useEffect(() => {
-    const getPokemons = async () => {
-      let response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151");
-      let json = await response.json();
-      setPokemons(json.results);
-    }
-    getPokemons();
-  }, [])
+  // useState show och setShow för Start Pokemon App knappen.
+  const [show, setShow] = useState(true);
 
   return (
     <div>
       <h1>Pokemon Application</h1>
-      {pokemons.map(pokemon => <PokemonApplication key={pokemon.id} data={pokemon}/> )}
-      <button>Click!</button>
+      <button onClick={() => setShow(!show)}>
+        {show ? "Start Pokemon App" : "End Pokemon App"}
+      </button>
+      {show && <PokemonApplication />}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
