@@ -1,3 +1,4 @@
+// Pokemon-komponent som visar detaljerad information om en vald Pokemon
 function Pokemon ({pokemon}) {
     return (
         <div className='pokemonContainer'>
