@@ -1,16 +1,41 @@
-# React + Vite
+#Pokémon Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##En enkel och interaktiv Pokémon-applikation byggd med React. Applikationen hämtar data från det officiella PokéAPI och låter användaren bläddra bland de första 151 Pokémon. När en Pokémon väljs visas detaljerad information såsom namn, typ, vikt, längd och bild.
 
-Currently, two official plugins are available:
+##🚀 Funktioner
+	•	Visa en startskärm med möjlighet att starta eller avsluta appen.
+	•	Hämta de 151 första Pokémon från PokéAPI automatiskt vid uppstart.
+	•	Lista Pokémon där användaren kan välja en.
+	•	Visa detaljerad information om vald Pokémon:
+	•	Namn
+	•	Typ(er)
+	•	Vikt
+	•	Längd
+	•	Bild (front sprite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##🧩 Komponenter
 
-## React Compiler
+##App.jsx
+	•	Huvudingången till applikationen.
+	•	Innehåller en startknapp som visar eller döljer Pokémon-applikationen.
+	•	Visar även en Pokémon-logo.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##PokemonApplication.jsx
+	•	Hämtar alla Pokémon från API:et.
+	•	Visar en lista med Pokémon där användaren kan klicka för att se mer information.
+	•	Hämtar detaljerad data om vald Pokémon.
+	•	Renderar Pokemon-komponenten när en Pokémon är vald.
 
-## Expanding the ESLint configuration
+##Pokemon.jsx
+	•	Presenterar detaljerad information om den valda Pokémon:
+	•	Bild
+	•	Namn
+	•	Typ(er)
+	•	Vikt
+	•	Längd
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##🔧 Teknologier
+	•	React
+	•	JavaScript (ES6+)
+	•	PokéAPI (https://pokeapi.co/)
+	•	CSS för styling
